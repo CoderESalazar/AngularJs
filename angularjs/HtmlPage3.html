@@ -1,0 +1,26 @@
+﻿<!DOCTYPE html>
+<html ng-app="myModule">
+<head>
+    <title></title>
+	<meta charset="utf-8" />
+    <script src="Scripts/angular.min.js"></script>
+    <script src="Scripts/CustomService.js"></script>
+    <script src="Scripts/StringService.js"></script>
+</head>
+<body ng-controller="myController">
+    <table>
+        <tr>
+            <td>Your String</td>
+            <td><input type="text" ng-model="input" /></td>
+        </tr>
+        <tr>
+            <td>Result</td>
+            <td><input type="text" ng-model="output"/></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td><input type="button" ng-click="transformString(input)" value="Process String"/></td>
+        </tr>
+    </table>
+</body>
+</html>
